@@ -20,11 +20,11 @@
 - ✅ Passwords _(From all browsers to one file)_
 - ✅ Cookies _(Sort each browser and profile in a separate file)_
 - ✅ Discord Token
-✅ Discord Info - Username, Phone number, Email, Billing, Nitro Status & Backup Codes
-✅ Discord Friends with rare badges
-✅ nstagram Session stealer & validator
-✅Roblox Session stealer & validator 
-✅ Autofills _(From all browsers to one file)_
+- ✅ Discord Info - Username, Phone number, Email, Billing, Nitro Status & Backup Codes
+- ✅ Discord Friends with rare badges
+- ✅ nstagram Session stealer & validator
+- ✅Roblox Session stealer & validator 
+- ✅ Autofills _(From all browsers to one file)_
 - ✅ Information _(Brief information about the device, as well as about the Internet connection country ip...)_
 - ✅ Telegram
 - ✅ Wallets _(62 most popular crypto wallets)_
