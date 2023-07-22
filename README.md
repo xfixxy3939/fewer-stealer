@@ -4,11 +4,6 @@
 ❗️ Disclaimer: We are not responsible for any damages this software may cause after being acquired. This software was made for personal education and sandbox testing. I am not responsible for any damages this software may cause. This was made for personal education.
 
 
-- 5 Stars = Main.js
-- 15 Stars = Backend
-- 25 Stars = Build Bot
-- 45 Stars = All source code of FewerStealer (creating a grabber with bot)
-
 ### 📝 Features
 
 🧊 **Desktop wallets**
@@ -29,6 +24,7 @@
 - ✅ Discord Friends with rare badges
 - ✅ Instagram Session stealer & validator
 - ✅Roblox Session stealer & validator 
+- ✅Tiktok Session stealer & validator 
 - ✅ Autofills _(From all browsers to one file)_
 - ✅ Information _(Brief information about the device, as well as about the Internet connection country ip...)_
 - ✅ Telegram
