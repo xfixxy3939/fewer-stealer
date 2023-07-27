@@ -1,6 +1,8 @@
 <h1 align="center">
 🛡️ Fewer Stealer v1.0
 
+❗️ If you have ideas and don't know how to install and errors in stealer, you can ask and tell everything https://github.com/paralox399/fewer-stealer/issues
+
 ❗️ Disclaimer: We are not responsible for any damages this software may cause after being acquired. This software was made for personal education and sandbox testing. I am not responsible for any damages this software may cause. This was made for personal education.
 
 
