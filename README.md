@@ -46,6 +46,7 @@ Fewer Stealer provides the following features for supported browsers:
 - ✅ Information: Provides brief device and internet connection details, including country IP.
 - ✅ Telegram Data Extraction
 - ✅ Wallets: Supports 62 of the most popular crypto wallets.
+- ✅ Exodus wallet injection (get the password whenever the user logs in the wallet)
 
 ## 🛡️ Additional
 
@@ -55,3 +56,14 @@ Fewer Stealer provides the following features for supported browsers:
 - ❗️ Source is highly obfuscated
 - ❗️ Sends all files to your discord webhook
 
+### 📝 〢 Todo
+
+Here are some of the upcoming features and improvements we plan to add to Fewer Stealer:
+
+> - More grabbers (VPN's, Gaming, Messengers,Steam Sessions,RedditSessions,Twitter Session,Minecraft Session stealer,FTP stealer (FileZilla))
+> - Firefox stealer
+
+Feel free to check back for updates on these exciting enhancements!
+
+
+---
