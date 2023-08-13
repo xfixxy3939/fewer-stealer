@@ -1,10 +1,15 @@
 <h1 align="center">
 🛡️ Fewer Stealer v1.0
 
-❗️ If you have ideas and don't know how to install and errors in stealer, you can ask and tell everything https://github.com/paralox399/fewer-stealer/issues
+</h1>
 
-❗️ Disclaimer: We are not responsible for any damages this software may cause after being acquired. This software was made for personal education and sandbox testing. I am not responsible for any damages this software may cause. This was made for personal education.
+<p align="center">
+    <strong>Disclaimer:</strong> This software is intended for personal educational and sandbox testing purposes only. We are not responsible for any damages that may occur as a result of its usage. Use it at your own risk.
+</p>
 
+<p align="center">
+    If you have any ideas, encounter installation issues, or come across errors while using Fewer Stealer, feel free to ask and discuss everything on our <a href="https://github.com/paralox399/fewer-stealer/issues">GitHub Issues</a> page.
+</p>
 
 ### 📝 Features
 
