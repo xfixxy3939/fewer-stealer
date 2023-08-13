@@ -16,21 +16,34 @@
 
    `Trust, Metamask, BinanceChain, Phantom, TronLink, Ronin, Exodus, Coin98, Authenticator, MathWallet, YoroiWallet, GuardaWallet, JaxxxLiberty, Wombat, EVERWallet, KardiaChain, XDEFI, Nami, TerraStation, MartianAptos, TON, Keplr, CryptoCom, PetraAptos, OKX, Sollet, Sender, Sui, SuietSui, Braavos, FewchaMove, EthosSui, ArgentX, NiftyWallet, BraveWallet, EqualWallet, BitAppWallet, iWallet, AtomicWallet, MewCx, GuildWallet, SaturnWallet, HarmonyWallet, PaliWallet, BoltX, LiqualityWallet, MaiarDeFiWallet, TempleWallet, Metamask_Edge, Ronin_Edge, Yoroi_Edge, Authenticator_Edge, MetaMask_Opera`
 
-🌐 **Browser**
+# Browser Support 🌐
 
-   `Chrome, Edge, Brave, Opera, OperaGX, OperaNeon, Yandex`
-- ✅ Passwords _(From all browsers to one file)_
-- ✅ Cookies _(Sort each browser and profile in a separate file)_
-- ✅ Discord Token
-- ✅ Discord Info - Username, Phone number, Email, Billing, Nitro Status & Backup Codes
-- ✅ Discord Friends with rare badges
-- ✅ Instagram Session stealer & validator
-- ✅Roblox Session stealer & validator 
-- ✅Tiktok Session stealer & validator 
-- ✅ Autofills _(From all browsers to one file)_
-- ✅ Information _(Brief information about the device, as well as about the Internet connection country ip...)_
-- ✅ Telegram
-- ✅ Wallets _(62 most popular crypto wallets)_
+The Fewer Stealer supports the following browsers:
+
+- Chrome
+- Edge
+- Brave
+- Opera
+- OperaGX
+- OperaNeon
+- Yandex
+
+## Features
+
+Fewer Stealer provides the following features for supported browsers:
+
+- ✅ Passwords: Extracts passwords from all browsers into a single file.
+- ✅ Cookies: Sorts each browser and profile into separate files.
+- ✅ Discord Token: Retrieves Discord tokens.
+- ✅ Discord Info: Collects username, phone number, email, billing details, nitro status, and backup codes.
+- ✅ Discord Friends: Captures friends' information, highlighting those with rare badges.
+- ✅ Instagram Session Stealer & Validator
+- ✅ Roblox Session Stealer & Validator
+- ✅ TikTok Session Stealer & Validator
+- ✅ Autofills: Gathers autofill data from all browsers into a single file.
+- ✅ Information: Provides brief device and internet connection details, including country IP.
+- ✅ Telegram Data Extraction
+- ✅ Wallets: Supports 62 of the most popular crypto wallets.
 
 #### 🛡️ Additional
 - ❗️Validates a found discord token and then sends it to your discord webhook
